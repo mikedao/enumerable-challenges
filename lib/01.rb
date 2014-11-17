@@ -5,4 +5,10 @@ class LowerCaseEmailGenerator
     @emails = emails
   end
 
+  def downcase_emails
+    emails.map do |email|
+      email.downcase
+    end
+  end
+
 end
