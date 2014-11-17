@@ -1,5 +1,8 @@
-module Email
-  def self.lowercase(input)
-    input.each { |input| input.downcase! }
+class LowerCaseEmailGenerator
+  attr_reader   :emails
+
+  def initialize(emails)
+    @emails = emails
   end
+
 end

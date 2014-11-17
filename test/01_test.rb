@@ -1,12 +1,12 @@
 require_relative 'test_helper'
 require_relative '../lib/01'
 
-class EmailTest < Minitest::Test
+describe LowerCaseEmailGenerator do
 
-  def test_downcaser
-    emails = ["A@ABC.COM", "D@DEF.com","JeFf@TuRinG.Io","test@test.com" ]
-    expected_output =  ["a@abc.com","d@def.com","jeff@turing.io", "test@test.com"]
-    assert_equal expected_output, Email.lowercase(emails)
-  end
+  it "takes some emails" do
+   emails = ["horace@turing.io", "JEFF@jeffisawesome.com", "StEvE@pizZa.com"]
+   generator = LowerCaseEmailGenerator.new(emails)
+   assert_equal emails, generator.emails
+ end
 
 end
