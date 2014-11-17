@@ -1,5 +1,5 @@
 require_relative 'test_helper'
-require_relative '../lib/01'
+require_relative '../lib/challenge_01'
 
 describe LowerCaseEmailGenerator do
 
